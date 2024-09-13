@@ -1,7 +1,7 @@
 
 # B Airways Airline Reservation System
 
-This project is a web-based airline reservation system built for **B Airways**, a subsidiary of Virgin Airlines. The platform allows users to book flights, manage bookings, and view flight schedules. It also includes features like user authentication, seat selection, and discount programs for frequent flyers. The system is designed to handle short to medium distance international flights and offers comprehensive reporting tools for flight and passenger data analysis.
+This project is a web-based airline reservation system built for **FlyMora Airways**, a subsidiary of Virgin Airlines. The platform allows users to book flights, manage bookings, and view flight schedules. It also includes features like user authentication, seat selection, and discount programs for frequent flyers. The system is designed to handle short to medium distance international flights and offers comprehensive reporting tools for flight and passenger data analysis.
 
 ## Project Features
 
