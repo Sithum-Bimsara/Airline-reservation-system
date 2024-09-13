@@ -24,7 +24,6 @@ This project is a web-based airline reservation system built for **FlyMora Airwa
 - **Frontend:** Next.js, React
 - **Backend:** Node.js, Express.js
 - **Database:** MySQL/PostgreSQL
-- **Hosting:** Vercel (for frontend), DigitalOcean/AWS (for backend and database)
 
 ## Getting Started
 
