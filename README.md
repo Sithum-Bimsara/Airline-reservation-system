@@ -10,7 +10,6 @@ This project is a web-based airline reservation system built for **FlyMora Airwa
 - **Passenger Categories:** Passengers are categorized into guest, frequent, and gold tiers, with corresponding discounts (5% for Frequent, 9% for Gold).
 - **Seat Selection:** Users can select available seats from a predefined seating plan. No overbooking is allowed.
 - **Flight Classes:** Ticket prices are determined based on Economy, Business, or Platinum class.
-- **Analytical Reports:** Provides management with reports like passengers under 18, booking trends, and revenue generated per aircraft type.
 - **Future Expansion:** Supports easy expansion by allowing the addition of new airports and routes.
 
 ## Database Design
@@ -23,7 +22,7 @@ This project is a web-based airline reservation system built for **FlyMora Airwa
 
 - **Frontend:** Next.js, React
 - **Backend:** Node.js, Express.js
-- **Database:** MySQL/PostgreSQL
+- **Database:** MySQL
 
 ## Getting Started
 
