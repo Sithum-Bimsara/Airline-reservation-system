@@ -1,12 +1,111 @@
-/* General styles */
-.container {
-  max-width: 500px;
+/* General styles for the signup container */
+/* General styles for the signup container */
+.pageContainer {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+  align-items: stretch; /* Ensure both sections align to the full height */
+  position: relative; /* To contain the background */
+  background-image: url('/images/Aeroplane1.jpg'); /* Replace with your image path */
+  background-size: cover; /* Ensure the image covers the entire container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+}
+
+.signupContainer {
+  display: flex;
+  flex-direction: row;
+  max-width: 900px;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 15px;
+  overflow: hidden;
+  align-items: stretch; /* Ensure both sections align to the full height */
+  position: relative; /* To contain the background */
+  background-size: cover; /* Ensure the image covers the entire container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  border-radius: 50px;
+}
+
+/* Image Section */
+.imageSection {
+  flex: 1.2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  height: 100%;
+  position: relative; /* Needed to position text relative to this section */
+  background-color: transparent;
+  border-radius: 15px 0 0 15px;
+}
+
+.signupImage {
+  max-width: 100%; /* Make the image take full width available */
+  max-height: 100%; /* Ensure the image doesn’t overflow */
+  width: auto;
+  height: auto;
+  border-radius: 0px;
+}
+.imageText1 {
+  position: absolute;
+  top: 180px; /* Position at the top of the image */
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: center;
+  color: white;
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Add shadow for readability */
+  z-index: 10; /* Ensure the text is on top of the image */
+  
+  padding: 5px 10px; /* Padding around the text */
+  border-radius: 5px; /* Rounded corners */
+}
+.imageText2 {
+  position: absolute;
+  top: 238px; /* Position at the top of the image */
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: center;
+  color: white;
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Add shadow for readability */
+  z-index: 10; /* Ensure the text is on top of the image */
+  
+  padding: 5px 10px; /* Padding around the text */
+  border-radius: 5px; /* Rounded corners */
+}
+.imageText3 {
+  position: absolute;
+  top: 300px; /* Position at the top of the image */
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: center;
+  color: white;
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Add shadow for readability */
+  z-index: 10; /* Ensure the text is on top of the image */
+  
+  padding: 5px 10px; /* Padding around the text */
+  border-radius: 5px; /* Rounded corners */
+}
+
+
+/* Form Section */
+.formSection {
+  flex: 1; /* Both sections will now take up equal space */
   background-color: white;
-  border-radius: 10px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-  margin-top: 50px;
+  padding: 0px 40px;
+  /*background-image: url('/images/Aeroplane3.jpg'); /* Replace with your image path */
+  border-radius: 0 15px 15px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .title {
@@ -56,8 +155,27 @@
   background-color: #0056b3;
 }
 
+/* Responsive behavior */
 @media (max-width: 768px) {
-  .container {
-    width: 90%;
+  /* On smaller screens, hide the image section */
+  .signupContainer {
+    flex-direction: column;
+  }
+
+  .imageSection {
+    display: none; /* Hide the image section */
+  }
+
+  .formSection {
+    border-radius: 15px; /* Rounded corners for the form section when full-width */
+  }
+
+  /* Adjustments for mobile */
+  .formSection {
+    padding: 80px;
+  }
+
+  .signupImage {
+    max-width: 100%; /* Allow full width for image in smaller screens (if you show it later) */
   }
 }

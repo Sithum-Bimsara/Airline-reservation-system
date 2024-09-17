@@ -245,7 +245,7 @@ const HomePage = () => {
       </div>
       
       {/* Banner Image */}
-      <div className={styles.bannerImage}>
+      {/* <div className={styles.bannerImage}>
         <Image
           src="/images/b1.jpg"
           alt="Banner Image"
@@ -253,7 +253,21 @@ const HomePage = () => {
           width={1920}
           height={300}
         />
-      </div>
+      </div> */}
+      <div className={styles.bannerVideo}>
+  <video
+    width="100%"  // Ensure the video takes up full width
+    height="auto" // Maintain the aspect ratio
+    autoPlay      // Auto-play the video when the page loads
+    muted         // Mute the video by default
+    loop          // Loop the video
+    playsInline   // Play video inline (without going fullscreen on mobile)
+  >
+    <source src="/videos/1.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
+
 
       {/* Main Content */}
       <div className={styles.content}>

@@ -232,7 +232,6 @@ const Signup = () => {
 
     try {
       const newUserID = (userCount + 1).toString();
-
       const dateOfBirth = new Date(formData.date_of_birth);
       const formattedDateOfBirth = formatDateForSQL(dateOfBirth);
 
@@ -287,108 +286,121 @@ const Signup = () => {
   };
 
   return (
-    <div className={styles.container}>
-      <h1 className={styles.title}>Signup</h1>
-      <p className={styles.description}>Total Registered Users: {userCount}</p>
-      <form className={styles.form} onSubmit={handleSubmit}>
-        <label className={styles.label}>
-          User Name:
-          <input
-            type="text"
-            name="User_name"
-            className={styles.input}
-            value={formData.User_name}
-            onChange={handleChange}
-          />
-        </label>
-        <label className={styles.label}>
-          First Name:
-          <input
-            type="text"
-            name="First_name"
-            className={styles.input}
-            value={formData.First_name}
-            onChange={handleChange}
-          />
-        </label>
-        <label className={styles.label}>
-          Last Name:
-          <input
-            type="text"
-            name="Last_name"
-            className={styles.input}
-            value={formData.Last_name}
-            onChange={handleChange}
-          />
-        </label>
-        <label className={styles.label}>
-          Date of Birth:
-          <input
-            type="date"
-            name="date_of_birth"
-            className={styles.input}
-            value={formData.date_of_birth}
-            onChange={handleChange}
-          />
-        </label>
-        <label className={styles.label}>
-          Country:
-          <input
-            type="text"
-            name="Country"
-            className={styles.input}
-            value={formData.Country}
-            onChange={handleChange}
-          />
-        </label>
-        <label className={styles.label}>
-          NIC Code:
-          <input
-            type="text"
-            name="NIC_code"
-            className={styles.input}
-            value={formData.NIC_code}
-            onChange={handleChange}
-          />
-        </label>
-        <label className={styles.label}>
-          Gender:
-          <select
-            name="Gender"
-            className={styles.select}
-            value={formData.Gender}
-            onChange={handleChange}
-          >
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
-            <option value="Other">Other</option>
-          </select>
-        </label>
-        <label className={styles.label}>
-          Email:
-          <input
-            type="email"
-            name="Email"
-            className={styles.input}
-            value={formData.Email}
-            onChange={handleChange}
-          />
-        </label>
-        <label className={styles.label}>
-          Password:
-          <input
-            type="password"
-            name="Password"
-            className={styles.input}
-            value={formData.Password}
-            onChange={handleChange}
-          />
-        </label>
-        <button type="submit" className={styles.button}>
-          Create an Account
-        </button>
-      </form>
+  <div className={styles.pageContainer}>
+    <div className={styles.signupContainer}>
+      <div className={styles.imageSection}>
+        <div>
+          <h1 className={styles.imageText1}>SignUp</h1>
+          <h1 className={styles.imageText2}>for</h1>
+          <h1 className={styles.imageText3}>FlyMora</h1>
+        </div>
+        <img src="/images/Aeroplane2.jpg" alt="Signup" className={styles.signupImage} />
+      </div>
+
+      <div className={styles.formSection}>
+        <h1 className={styles.title}>Signup</h1>
+        <p className={styles.description}>Total Registered Users: {userCount}</p>
+        <form className={styles.form} onSubmit={handleSubmit}>
+          <label className={styles.label}>
+            User Name:
+            <input
+              type="text"
+              name="User_name"
+              className={styles.input}
+              value={formData.User_name}
+              onChange={handleChange}
+            />
+          </label>
+          <label className={styles.label}>
+            First Name:
+            <input
+              type="text"
+              name="First_name"
+              className={styles.input}
+              value={formData.First_name}
+              onChange={handleChange}
+            />
+          </label>
+          <label className={styles.label}>
+            Last Name:
+            <input
+              type="text"
+              name="Last_name"
+              className={styles.input}
+              value={formData.Last_name}
+              onChange={handleChange}
+            />
+          </label>
+          <label className={styles.label}>
+            Date of Birth:
+            <input
+              type="date"
+              name="date_of_birth"
+              className={styles.input}
+              value={formData.date_of_birth}
+              onChange={handleChange}
+            />
+          </label>
+          <label className={styles.label}>
+            Country:
+            <input
+              type="text"
+              name="Country"
+              className={styles.input}
+              value={formData.Country}
+              onChange={handleChange}
+            />
+          </label>
+          <label className={styles.label}>
+            NIC Code:
+            <input
+              type="text"
+              name="NIC_code"
+              className={styles.input}
+              value={formData.NIC_code}
+              onChange={handleChange}
+            />
+          </label>
+          <label className={styles.label}>
+            Gender:
+            <select
+              name="Gender"
+              className={styles.select}
+              value={formData.Gender}
+              onChange={handleChange}
+            >
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
+            </select>
+          </label>
+          <label className={styles.label}>
+            Email:
+            <input
+              type="email"
+              name="Email"
+              className={styles.input}
+              value={formData.Email}
+              onChange={handleChange}
+            />
+          </label>
+          <label className={styles.label}>
+            Password:
+            <input
+              type="password"
+              name="Password"
+              className={styles.input}
+              value={formData.Password}
+              onChange={handleChange}
+            />
+          </label>
+          <button type="submit" className={styles.button}>
+            Create an Account
+          </button>
+        </form>
+      </div>
     </div>
+    </div> 
   );
 };
 
