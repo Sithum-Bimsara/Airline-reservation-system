@@ -16,12 +16,11 @@ This project is a web-based airline reservation system built for **FlyMora Airwa
 
 - The database encapsulates all the features outlined above and is designed to maintain ACID properties, with appropriate foreign and primary keys to ensure data integrity.
 - **Entities:** Passengers, Flights, Aircrafts, Airports, Bookings, Schedules.
-- **Procedures and Triggers:** Used to maintain consistency, enforce business rules, and produce reports.
-  
+
 ## Technologies Used
 
 - **Frontend:** Next.js, React
-- **Backend:** Node.js, Express.js
+- **Backend:** Node.js
 - **Database:** MySQL
 
 ## Getting Started
